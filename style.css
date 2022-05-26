@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.info {
+  text-align: center;
+  width: 60vw;
+  color: white;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 400px;
+}
+
+.links a img {
+  width: 60px;
+  margin-right: 10px;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(1, 0.07, 0, 0.97);
+}
+
+.links a img:hover {
+  width: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h4 {
+  margin-right: 20px;
+  color: white;
+  position: absolute;
+  left: 0;
+}
+
+.flag {
+  position: absolute;
+  z-index: -100;
+  width: 47vw;
+  left: -20vw;
+  top: -10vh;
+}
+
+.africa {
+  position: absolute;
+  z-index: -100;
+  width: 47vw;
+  right: -20vw;
+  top: -10vh;
+}
+
+@media all and (max-width: 650px) {
+  * {
+    font-size: 0.95em;
+  }
+
+  .flag {
+    left: -20vw;
+    top: 10vh;
+  }
+  
+  .africa {
+    opacity: 0;
+  }
+
+  .links a img {
+    width: 40px;
+  }
+
+  .links a img:hover {
+    width: 60px;
+    opacity: 0.8;
+  }
+
+  .links {
+    bottom: 0;
+  }
+
+  .links h4 {
+    opacity: 0;
+  }
+ }
